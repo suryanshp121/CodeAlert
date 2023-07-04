@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CodeAlert</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="/">CodeAlert</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Visit Coding Platforms
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://leetcode.com/">LeetCode</a></li>
+                            <li><a class="dropdown-item" href="https://www.codechef.com/">CodeChef</a></li>
+                            <li><a class="dropdown-item" href="https://codeforces.com/">CodeForces</a></li>
+                            <li><a class="dropdown-item" href="https://www.hackerrank.com/">HackerRank</a></li>
+                            <li><a class="dropdown-item" href="https://atcoder.jp/">AtCoder</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/contact.html">Join Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <form class="m-3 m-lg-5">
+        <div class="form-group mb-2">
+            <label for="exampleInputEmail1">First Name</label>
+            <input onkeyup="enableSubmit()" required type="text" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+        </div>
+        <div class="form-group mb-2">
+            <label for="exampleInputEmail1">Second Name</label>
+            <input onkeyup="enableSubmit()" required type="text" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Second Name">
+        </div>
+        <div class="form-group mb-2">
+          <label for="exampleInputEmail1">Email address</label>
+          <input onkeyup="enableSubmit()" required type="email" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group mb-2">
+            <label for="exampleInputEmail1">Mobile Number</label>
+            <input onkeyup="enableSubmit()" required type="number" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+        </div>
+        <div class="form-group mb-2">
+            <label for="exampleInputEmail1">WhatsApp Number</label>
+            <input onkeyup="enableSubmit()" type="number" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter WhatsApp Number">
+        </div>
+        <div class="form-check mb-2">
+          <input  type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" id="b1"class="btn btn-primary" disabled>Submit</button>
+      </form>
+      <div class="footer container-fluid bg-white">
+        <div class="container fc">
+            <p class="text-dark mb-0 fst-italic">Copyright &copy; 2023 CodeAlert</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="contact.js"></script>
+</body>
+</html>

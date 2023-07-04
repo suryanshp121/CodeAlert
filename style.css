@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    height: 6vh;
+    margin-top: auto;
+}
+
+.fc{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
